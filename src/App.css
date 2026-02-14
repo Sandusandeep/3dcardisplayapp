@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #e88b0a 0%, #0f0f0f 40%, #ffffff 100%);
+  font-family: sans-serif;
+  color: white;
+}
+.header {
+  height: 70px;
+  background: linear-gradient(to right, #000, #111);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.canvas-container {
+  position: relative;
+  height: calc(100vh - 70px);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 28px;
+  padding: 15px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+  transition: 0.3s ease;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.left {
+  left: 40px;
+}
+.right {
+  right: 40px;
+}
